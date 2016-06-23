@@ -4,7 +4,7 @@ RUN curl -sL https://deb.nodesource.com/setup | bash -
 RUN apt-get install -y ssh
 RUN ln -sf /usr/share/zoneinfo/IST /etc/localtime
 #COPY SIA /opt/
-COPY APP /opt/APP
+COPY app /opt/app
 WORKDIR /opt/APP
 RUN npm install
 RUN mkdir logs && chmod +x logs -R
